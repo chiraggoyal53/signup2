@@ -1,0 +1,412 @@
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  margin: 0;
+  height: 100vh;
+background-image: url(ChatGPT\ Image\ Feb\ 8\,\ 2026\,\ 07_06_53\ PM.png);
+  display: flex;
+  justify-content: center; /* Left-Right center */
+  align-items: center;     /* Up-Down center */
+
+    background-size: cover;
+     font-family: 'Poppins', sans-serif; 
+    
+}
+
+.h1{
+    position:absolute;
+    top: 20px;
+    left: 24px;
+  color: white;
+    text-shadow:0 0 8px rgba(0,255,213,0.6); ;
+
+     width: 350px;
+}
+h3{
+  position: absolute;
+  top: 14%;
+  color: white;
+   text-shadow: 0px 0px 8px #00ffd5;
+}
+
+.form{
+    display: flex;
+    height: 500px;
+    width: 350px;
+   margin: 5px;
+   padding: 12px;
+   border-radius: 5px;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 0px 10px #464c49d1;
+   backdrop-filter: blur(3px);
+   position: relative;
+   bottom: 20px;
+}
+.form1{
+  position: relative;
+  bottom: 30px;
+}
+
+.form1 input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+    height: 40px;
+    width: 200px;
+    
+}
+
+.userName{
+    background-color: rgb(255, 255, 255);
+    width: 270px;
+    height: 45px;
+    margin: 5px, 15px, 5px, 15px;
+    border: none;
+    border-radius: 40px;
+background: rgba(255,255,255,0.25);
+ 
+  border: 1px solid rgba(207, 199, 199, 0.3);
+  backdrop-filter: blur(10px);
+color: white;
+
+}
+
+.userName:focus-within{
+  border-color: #00ffd5;
+  box-shadow: 0 0 8px rgba(0,255,213,0.6);
+}
+.userName input{
+position: relative;
+bottom: 20px;
+left: 30px;
+  padding: 14px 12px;
+  font-size: 16px;
+  width: 240px;
+height: 45px;
+background: rgba(6, 124, 154, 0); 
+ 
+}
+
+.userName label{
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  transition: 0.5s ease;  
+  pointer-events: none;
+   letter-spacing: 1px;
+}
+
+.userName input:focus + label,
+.userName input:valid + label {
+  display: inline;
+  top: -1.5px;
+  font-size: 13px;
+  color: #00ffd5;
+  background: #204d5a;
+  padding: 0 6px;
+  border-radius: 40px;
+}
+
+.userName input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.userName i{
+position: relative;
+ top: 12px;
+ left: 10px;
+font-size: 20px;
+color: rgba(32, 65, 63, 0.481);
+
+  
+}
+
+
+.email{
+    background-color: white;
+    width: 270px;
+    height: 45px;
+    margin: 5px, 15px, 5px, 15px;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    top: 12px;
+background: rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(5px);
+
+}
+
+
+.email:focus-within{
+  border-color: #00ffd5;
+  box-shadow: 0 0 8px rgba(0,255,213,0.6);
+}
+.email input{
+position: relative;
+bottom: 20px;
+left: 30px;
+  padding: 14px 12px;
+  font-size: 16px;
+  width: 240px;
+height: 45px;
+background: rgba(154, 6, 6, 0); 
+ 
+}
+
+.email label{
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  transition: 0.5s ease;  
+  pointer-events: none;
+  color: white;
+   letter-spacing: 1px;
+}
+
+.email input:focus + label,
+.email input:valid + label {
+  display: inline;
+  top: -1.5px;
+  font-size: 13px;
+  color: #00ffd5;
+  background: #204d5a;
+  padding: 0 6px;
+  border-radius: 40px;
+}
+
+.email input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.email i{
+position: relative;
+ top: 12px;
+ left: 10px;
+font-size: 20px;
+color: rgba(32, 65, 63, 0.481);
+
+}
+
+.password{
+    background-color: white;
+    width: 270px;
+    height: 45px;
+    margin: 5px, 15px, 5px, 15px;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    top: 26px;
+background: rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(5px);
+
+}
+
+
+.password:focus-within{
+  border-color: #00ffd5;
+  box-shadow: 0 0 8px rgba(0,255,213,0.6);
+}
+.password input{
+position: relative;
+bottom: 20px;
+left: 30px;
+  padding: 14px 12px;
+  font-size: 16px;
+  width: 240px;
+height: 45px;
+background: rgba(154, 6, 6, 0); 
+ 
+}
+
+.password label{
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  transition: 0.5s ease;  
+  pointer-events: none;
+   letter-spacing: 1px;
+  color: rgba(255, 255, 255);
+}
+
+.password input:focus + label,
+.password input:valid + label {
+  display: inline;
+  top: -1.5px;
+  font-size: 13px;
+  color: #00ffd5;
+  background: #204d5a;
+  padding: 0 6px;
+  border-radius: 40px;
+}
+
+.password input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.password i{
+position: relative;
+ top: 12px;
+ left: 10px;
+font-size: 20px;
+color: rgba(32, 65, 63, 0.481);
+ 
+}
+
+.password1{
+  border: 2px solid transparent;
+   color: black;
+    width: 270px;
+    height: 45px;
+    margin: 20px, 0px;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    top: 40px;
+     transition: 0.3s;
+background: rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(5px);
+}
+.password1:focus-within{
+  border-color: #00ffd5;
+  box-shadow: 0 0 8px rgba(0,255,213,0.6);
+}
+.password1 input{
+position: relative;
+bottom: 20px;
+left: 30px;
+  padding: 14px 12px;
+  font-size: 16px;
+  width: 240px;
+height: 45px;
+background: rgba(154, 6, 6, 0); 
+
+}
+
+.password1 label{
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  transition: 0.5s ease;  
+  pointer-events: none;
+  color: white;
+   letter-spacing: 1px;
+}
+
+.password1 input:focus + label,
+.password1 input:valid + label {
+  display: inline;
+  top: -1.5px;
+  font-size: 13px;
+  color: #00ffd5;
+  background: #204d5a;
+  padding: 0 6px;
+  border-radius: 40px;
+}
+
+
+.password1 input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.password1 i{
+position: relative;
+ top: 12px;
+ left: 10px;   
+font-size: 20px;
+color: rgba(32, 65, 63, 0.481);
+}    
+
+.term {
+  position: relative;
+  top: 50px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px; 
+   letter-spacing: 1px; 
+}
+
+.term input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+    border-color: #00ffd5;
+  box-shadow: 0px 0px 10px rgba(0,255,213,0.6);
+  accent-color: #00ffd5;
+}
+.term a{
+  font-size: 14px;
+  gap: 8px;
+  border-bottom: 1px solid #00ffd5;
+  border-radius: 3px;
+ letter-spacing: 1px;
+   box-shadow: 0px 3px 2px 0px rgba(0,255,213,0.6)
+}   
+
+button {
+  background: linear-gradient(135deg, #2fd3c4, #1aa39a);
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(47, 211, 196, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+top: 80px;
+left: 60px;
+font-weight: 600;
+width: 160px;
+}
+
+/* Hover Effect */
+button:hover {
+  background: linear-gradient(135deg, #1aa39a, #2fd3c4);
+  transform: scale(1.05);
+}
+
+/* Click Effect */
+button:active {
+  transform: scale(0.95);
+}
+
+
+.signUp{
+  display: inline;
+  text-align: center;
+  position: relative;
+  top: 110px;
+  color: white;
+  font-size: 14px;
+}
+.signUp a{
+  text-decoration: none;
+  color: #00ffd5;
+  text-shadow: 0px 0px 8px #00ffd5;
+}
+
